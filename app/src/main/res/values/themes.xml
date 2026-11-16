@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.CatalogApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+
+        <item name="colorError">@color/colorError</item>
+        <item name="colorOnError">@color/colorOnError</item>
+
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.CatalogApp.MaterialAlertDialog</item>
+
+        <item name="android:statusBarColor">@color/colorSurface</item>
+        <item name="android:navigationBarColor">@color/colorSurface</item>
+        <item name="android:windowBackground">@color/colorSurface</item>
+    </style>
+
+    <style name="Theme.CatalogApp" parent="Base.Theme.CatalogApp" />
+
+    <style name="ThemeOverlay.CatalogApp.MaterialAlertDialog"
+        parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+</resources>

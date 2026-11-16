@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    tools:context=".FavouritesFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favourites_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"
+        tools:listitem="@layout/item" />
+
+    <TextView
+        android:id="@+id/empty_favourites_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="32dp"
+        android:text="No matching favourites. Save a place with its heart icon or adjust your search."
+        android:textAlignment="center"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</FrameLayout>
